@@ -51,8 +51,9 @@ wait
 COMMUNITYSTRING=`openssl rand -base64 24`
 wait
 
-echo '# Change RANDOMSTRINGGOESHERE to your preferred SNMP community string' > /etc/snmp/snmpd.conf
+echo "agentAddress udp:161,udp6:161" >> /etc/snmp/snmpd.conf
 echo "com2sec readonly  default         ${COMMUNITYSTRING}" >> /etc/snmp/snmpd.conf
+echo "com2sec6 readonly  default         ${COMMUNITYSTRING}" >> /etc/snmp/snmpd.conf
 echo "" >> /etc/snmp/snmpd.conf
 echo "group MyROGroup v2c        readonly" >> /etc/snmp/snmpd.conf
 echo "view all    included  .1" >> /etc/snmp/snmpd.conf

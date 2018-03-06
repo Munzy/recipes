@@ -43,7 +43,9 @@ echo 'ip6tables -A INPUT -p udp -m multiport --destination-ports 161 -j ACCEPT' 
 echo 'ip6tables -A INPUT -j REJECT' >>/root/iptables.sh
 echo 'ip6tables -A FORWARD -j REJECT' >>/root/iptables.sh
 
-chmod +x /root/iptables.sh 
+chmod 700 /root/iptables.sh
+chmod +x /root/iptables.sh
+
 
 echo "
 ###############################################

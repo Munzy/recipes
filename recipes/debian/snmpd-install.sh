@@ -72,6 +72,6 @@ echo "#=================================================="
 echo "SNMPD Setup with community:  ${COMMUNITYSTRING}"
 echo "#=================================================="
 
-echo "#==================================================" >> /root/snmpd.community.txt
-echo "SNMPD Setup with community:  ${COMMUNITYSTRING}" >> /root/snmpd.community.txt
-echo "#==================================================" >> /root/snmpd.community.txt
+echo "#==================================================" >> /root/recipes/snmpd.community.txt
+echo "SNMPD Setup with community:  ${COMMUNITYSTRING}" >> /root/recipes/snmpd.community.txt
+echo "#==================================================" >> /root/recipes/snmpd.community.txt

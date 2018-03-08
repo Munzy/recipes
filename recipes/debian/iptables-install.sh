@@ -17,6 +17,8 @@ echo "
 ###############################################
 "
 
+mkdir -p /root/recipes
+
 echo '#!/bin/bash'>/root/recipes/iptables.sh
 echo '#####################################################' >>/root/recipes/iptables.sh
 echo '#      IPv4'  >>/root/recipes/iptables.sh

@@ -37,3 +37,4 @@ apt-get install zip -y
 apt-get install unzip -y
 apt-get install rsyslogd -y
 apt-get install fail2ban -y
+apt-get install vnstat -y

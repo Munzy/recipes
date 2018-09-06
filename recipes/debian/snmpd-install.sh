@@ -16,11 +16,6 @@ echo "
 ###############################################
 "
 
-citySNMPD=`wget -O- https://ipapi.co/city/`
-countrySNMPD=`wget -O- https://ipapi.co/country/`
-gpsSNMPD=`wget -O- https://ipapi.co/latlong`
-
-
 #read -p "Rack / Server ID? " rackSNMPD </dev/tty
 #wait
 #read -p "Room / Virtualization Type? " roomSNMPD </dev/tty
@@ -39,6 +34,12 @@ read -p "Device Owners Name? " nameSNMPD </dev/tty
 wait
 read -p "Email? " emailSNMPD </dev/tty
 wait
+
+citySNMPD=`wget -O- https://ipapi.co/city/`
+countrySNMPD=`wget -O- https://ipapi.co/country/`
+gpsSNMPD=`wget -O- https://ipapi.co/latlong`
+
+
 cd /tmp
 wget https://raw.githubusercontent.com/librenms/librenms-agent/master/snmp/distro
 wait

@@ -16,6 +16,9 @@ echo "
 ###############################################
 "
 
+citySNMPD=`wget -qO- https://ipinfo.io/loc`
+countrySNMPD=`wget -qO- https://ipinfo.io/country`
+gpsSNMPD=`wget -qO- https://ipinfo.io/loc`
 
 
 #read -p "Rack / Server ID? " rackSNMPD </dev/tty
@@ -24,14 +27,14 @@ echo "
 #wait
 #read -p "Building / Hosting Company? " buildingSNMPD </dev/tty
 #wait
-read -p "City? " citySNMPD </dev/tty
-wait
-read -p "Country? " countrySNMPD </dev/tty
-wait
-read -p "GPS Latitude? " gpsXSNMPD </dev/tty
-wait
-read -p "GPS Longitude? " gpsYSNMPD </dev/tty
-wait
+#read -p "City? " citySNMPD </dev/tty
+#wait
+#read -p "Country? " countrySNMPD </dev/tty
+#wait
+#read -p "GPS Latitude? " gpsXSNMPD </dev/tty
+#wait
+#read -p "GPS Longitude? " gpsYSNMPD </dev/tty
+#wait
 read -p "Device Owners Name? " nameSNMPD </dev/tty
 wait
 read -p "Email? " emailSNMPD </dev/tty
@@ -60,7 +63,7 @@ echo "group MyROGroup v2c        readonly" >> /etc/snmp/snmpd.conf
 echo "view all    included  .1" >> /etc/snmp/snmpd.conf
 echo "access MyROGroup \"\"      any       noauth    exact  all    none   none" >> /etc/snmp/snmpd.conf
 echo "" >> /etc/snmp/snmpd.conf
-echo "syslocation ${citySNMPD}, ${countrySNMPD} [${gpsXSNMPD},${gpsYSNMPD}]" >> /etc/snmp/snmpd.conf
+echo "syslocation ${citySNMPD}, ${countrySNMPD} [${gpsSNMPD}]" >> /etc/snmp/snmpd.conf
 echo "syscontact ${nameSNMPD} ${emailSNMPD}" >> /etc/snmp/snmpd.conf
 echo "" >> /etc/snmp/snmpd.conf
 echo "#Distro Detection" >> /etc/snmp/snmpd.conf

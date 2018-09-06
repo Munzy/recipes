@@ -16,9 +16,9 @@ echo "
 ###############################################
 "
 
-citySNMPD=`wget -qO- https://ipapi.co/city/`
-countrySNMPD=`wget -qO- https://ipapi.co/country/`
-gpsSNMPD=`wget -qO- https://ipapi.co/latlong`
+citySNMPD=`wget -O- https://ipapi.co/city/`
+countrySNMPD=`wget -O- https://ipapi.co/country/`
+gpsSNMPD=`wget -O- https://ipapi.co/latlong`
 
 
 #read -p "Rack / Server ID? " rackSNMPD </dev/tty

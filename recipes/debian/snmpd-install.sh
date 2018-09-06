@@ -18,12 +18,12 @@ echo "
 
 
 
-read -p "Rack / Server ID? " rackSNMPD </dev/tty
-wait
-read -p "Room / Virtualization Type? " roomSNMPD </dev/tty
-wait
-read -p "Building / Hosting Company? " buildingSNMPD </dev/tty
-wait
+#read -p "Rack / Server ID? " rackSNMPD </dev/tty
+#wait
+#read -p "Room / Virtualization Type? " roomSNMPD </dev/tty
+#wait
+#read -p "Building / Hosting Company? " buildingSNMPD </dev/tty
+#wait
 read -p "City? " citySNMPD </dev/tty
 wait
 read -p "Country? " countrySNMPD </dev/tty
@@ -60,7 +60,7 @@ echo "group MyROGroup v2c        readonly" >> /etc/snmp/snmpd.conf
 echo "view all    included  .1" >> /etc/snmp/snmpd.conf
 echo "access MyROGroup \"\"      any       noauth    exact  all    none   none" >> /etc/snmp/snmpd.conf
 echo "" >> /etc/snmp/snmpd.conf
-echo "syslocation ${rackSNMPD}, ${roomSNMPD}, ${buildingSNMPD}, ${citySNMPD}, ${countrySNMPD} [${gpsXSNMPD},${gpsYSNMPD}]" >> /etc/snmp/snmpd.conf
+echo "syslocation ${citySNMPD}, ${countrySNMPD} [${gpsXSNMPD},${gpsYSNMPD}]" >> /etc/snmp/snmpd.conf
 echo "syscontact ${nameSNMPD} ${emailSNMPD}" >> /etc/snmp/snmpd.conf
 echo "" >> /etc/snmp/snmpd.conf
 echo "#Distro Detection" >> /etc/snmp/snmpd.conf

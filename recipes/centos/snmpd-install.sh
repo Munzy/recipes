@@ -47,9 +47,9 @@ mv /tmp/distro /usr/bin/distro
 chmod +x /usr/bin/distro
 wait
 
-apt-get update
+yum update
 wait
-apt-get install snmpd -y
+yum install net-snmpd net-snmp-utils -y
 wait
 
 COMMUNITYSTRING=`openssl rand -base64 24`

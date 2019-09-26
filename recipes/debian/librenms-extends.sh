@@ -323,4 +323,4 @@ function lift_off {
 }
 
 
-[ -d /etc/snmp ] && lift_off
+[ -f /etc/snmp/snmpd.conf ] && lift_off

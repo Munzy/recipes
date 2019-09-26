@@ -303,10 +303,10 @@ function lift_off {
     entropy
 
     # fail2ban
-    [ -d /etc/fail2ban ] && fail2ban
+    #[ -d /etc/fail2ban ] && fail2ban
 
     # mdadm
-    [ -f /dev/md0 ] && mdadm
+    #[ -f /dev/md0 ] && mdadm
 
     # os updates
     os_updates
@@ -315,7 +315,7 @@ function lift_off {
     [ -d /etc/postfix ] && postfix
 
     # smart
-    [ -d /etc/smartmontools ] && smart
+    #[ -d /etc/smartmontools ] && smart
 
     service snmpd restart
     systemctl restart snmpd

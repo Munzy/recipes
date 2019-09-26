@@ -8,6 +8,7 @@ function depends {
 
     apt update
     apt install wget -y
+    yum install wget -y
 
 }
 
@@ -194,6 +195,7 @@ function portactivity {
 function postfix {
 
     apt install pflogsumm -y
+    yum install pflogsumm -y
     wget https://github.com/librenms/librenms-agent/raw/master/snmp/postfix-queues -O /etc/snmp/postfix-queues
     wget https://github.com/librenms/librenms-agent/raw/master/snmp/postfixdetailed -O /etc/snmp/postfixdetailed
     chmod +x /etc/snmp/postfixdetailed

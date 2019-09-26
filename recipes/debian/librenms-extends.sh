@@ -313,4 +313,4 @@ function lift_off {
 }
 
 
-lift_off
+[ -d /etc/snmp ] && lift_off

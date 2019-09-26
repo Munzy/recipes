@@ -163,6 +163,14 @@ function os_updates {
     chmod +x /etc/snmp/osupdate
     echo extend osupdate /etc/snmp/osupdate >> /etc/snmp/snmpd.conf
 
+    [ ! -f /etc/apt/apt.conf.d/10periodic ] && os_updates_cron
+
+}
+
+function os_updates_cron {
+    
+    echo APT::Periodic::Update-Package-Lists \"1\"\; >> /etc/apt/apt.conf.d/10periodic
+
 }
 
 function php_fpm {

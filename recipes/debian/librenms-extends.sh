@@ -295,7 +295,7 @@ function lift_off {
     depends
 
     # Apache
-    [ -d /etc/apache2/sites-enabled ] && apache
+    # [ -d /etc/apache2/sites-enabled ] && apache
 
     # Entropy
     entropy

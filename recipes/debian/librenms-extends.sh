@@ -307,7 +307,7 @@ function lift_off {
     [ -f /dev/md0 ] && mdadm
 
     # os updates
-    [ -d /etc/apt ] && os_updates
+    os_updates
 
     # postfix
     [ -d /etc/postfix ] && postfix

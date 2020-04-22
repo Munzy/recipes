@@ -2,7 +2,7 @@
 
 ###################################################
 #
-#  git: https://git.enjen.net/munzy/recipes
+#  git: https://github.com/Munzy/recipes
 # 
 #  By Munzy 
 #  

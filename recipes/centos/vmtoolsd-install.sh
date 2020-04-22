@@ -1,4 +1,11 @@
 #!/bin/bash
+###################################################
+#
+#  git: https://github.com/Munzy/recipes
+# 
+#  By Munzy 
+#  
+###################################################
 
 # grab the repo we need.
 yum --enablerepo=extras -y intall epel-release

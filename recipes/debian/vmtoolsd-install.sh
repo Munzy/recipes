@@ -1,5 +1,13 @@
 #!/bin/bash
 
+###################################################
+#
+#  git: https://github.com/Munzy/recipes
+# 
+#  By Munzy 
+#  
+###################################################
+
 # update pack list
 apt-get update
 

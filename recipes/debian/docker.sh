@@ -1,5 +1,13 @@
 #!/bin/bash
 
+###################################################
+#
+#  git: https://github.com/Munzy/recipes
+# 
+#  By Munzy 
+#  
+###################################################
+
 apt-get remove docker docker-engine docker.io containerd runc -y
 
 apt-get update

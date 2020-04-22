@@ -2,10 +2,8 @@
 
 ###################################################
 #
-#  git: https://git.enjen.net/munzy/recipes
+#  git: https://github.com/Munzy/recipes
 # 
-#  http://www.cyberciti.biz/faq/linux-tcp-tuning/
-#
 #  By Munzy 
 #  
 ###################################################

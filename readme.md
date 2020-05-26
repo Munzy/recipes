@@ -28,7 +28,7 @@ wget --no-check-certificate -qO- https://github.com/Munzy/recipes/raw/master/rec
 ### SNMPD Installer Hashed (Deb)
 
 ```
-wget --no-check-certificate -qO- hhttps://github.com/Munzy/recipes/raw/master/recipes/debian/snmpd-install.sh | bash
+wget --no-check-certificate -qO- https://github.com/Munzy/recipes/raw/master/recipes/debian/snmpd-install.sh | bash
 ```
 
 
@@ -37,3 +37,9 @@ wget --no-check-certificate -qO- hhttps://github.com/Munzy/recipes/raw/master/re
 ```
 wget --no-check-certificate -qO- https://github.com/Munzy/recipes/raw/master/recipes/debian/unattended-upgrades.sh | bash
 ```
+
+### Docker
+```
+wget --no-check-certificate -qO- https://github.com/Munzy/recipes/raw/master/recipes/debian/docker.sh | bash
+```
+
